@@ -8,7 +8,13 @@ const RouterComponent = () => {
     return (
         <Router >
             <Stack key="root" hideNavBar>
-
+                <Scene key="auth">
+                    <Scene
+                        key="login"
+                        component={LoginForm}
+                        title="Please login"
+                        initial />
+                </Scene>
                 <Scene key="main">
                     <Scene 
                         key="employeeList" 
@@ -21,14 +27,7 @@ const RouterComponent = () => {
                         rightTitle="Add" 
                         onRight={() => console.log("right!!")} 
                         component={EmployeeCreate} 
-                        title="Create Employee" />
-                </Scene>
-                <Scene key="auth">
-                    <Scene
-                        key="login"
-                        component={LoginForm}
-                        title="Please login"
-                        initial />
+                        title="Create Employee" initial/>
                 </Scene>
             </Stack>
         </Router>
