@@ -4,7 +4,8 @@ import { EMAIL_CHANGED,
     LOGIN_USER_FAIL,
     LOGIN_USER
 } from '../actions/types';
-const INITIAL_STATE = { email: '', 
+const INITIAL_STATE = { 
+    email: '', 
     password: '', 
     user: null,
     error: '',
