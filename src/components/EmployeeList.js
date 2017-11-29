@@ -24,7 +24,7 @@ class EmployeeList extends Component {
             rowHasChanged: (r1, r2) => r1 !== r2
         });
 
-        this.DataSource = ds.cloneWithRows(employees);
+        this.dataSource = ds.cloneWithRows(employees);
     }
 
     renderRow(employee) {
